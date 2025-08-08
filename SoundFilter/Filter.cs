@@ -18,7 +18,7 @@ internal unsafe class Filter : IDisposable
             "48 89 5C 24 ?? 48 89 74 24 ?? 57 48 83 EC 20 33 F6 8B DA 48 8B F9 0F BA E2 0F";
 
         // https://github.com/Ottermandias/Penumbra.GameData/blob/main/Signatures.cs#L10-L11
-        internal const string GetResourceSync = "E8 ?? ?? ?? ?? 48 8B D8 8B C7";
+        internal const string GetResourceSync = "E8 ?? ?? ?? ?? 48 8B C8 8B C3 F0 0F C0 81";
         internal const string GetResourceAsync =
             "E8 ?? ?? ?? 00 48 8B D8 EB ?? F0 FF 83 ?? ?? 00 00";
         internal const string LoadSoundFile = "E8 ?? ?? ?? ?? 48 85 C0 75 12 B0 F6";
